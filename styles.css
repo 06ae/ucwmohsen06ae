@@ -1,0 +1,100 @@
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light blue background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes the full viewport height */
+}
+
+/* Header and Navigation styles */
+header {
+    background-color: #006064; /* Dark teal header */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00838f; /* Teal navigation */
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #00acc1; /* Light blue-gray links */
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #4dd0e1; /* Lighter blue hover effect */
+}
+
+/* Search bar styles (Home page only) */
+.search-bar {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #006064; /* Dark teal button */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Home page content (center-aligned) */
+.home-content {
+    text-align: center;
+    margin-top: 50px;
+    flex: 1; /* This ensures the content area takes up the remaining space, pushing the footer to the bottom */
+}
+
+/* Profile picture styles (Home page only) */
+.profile-picture img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* About page content (left-aligned) */
+.content {
+    margin: 50px auto;
+    width: 90%; /* Adjust the width as needed */
+    max-width: 800px; /* Limit max width for readability */
+    flex: 1; /* This ensures the content area takes up the remaining space, pushing the footer to the bottom */
+}
+
+.content h2, .content p, .content ul {
+    text-align: left;
+    line-height: 1.6; /* Improve readability */
+}
+
+.content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #006064; /* Dark teal footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto; /* Ensures the footer sticks to the bottom */
+}
